@@ -89,15 +89,15 @@ class Avabur(object):
                    "Type4": "true"}
 
         if not type0:
-            payload['Type0'] = "false"
+            payload['Type[0]'] = "false"
         if not type1:
-            payload['Type1'] = "false"
+            payload['Type[1]'] = "false"
         if not type2:
-            payload['Type2'] = "false"
+            payload['Type[2]'] = "false"
         if not type3:
-            payload['Type3'] = "false"
+            payload['Type[3]'] = "false"
         if not type4:
-            payload['Type4'] = "false"
+            payload['Type[4]'] = "false"
         self.session.post(self.clan_activity_url, data=payload)
 
     def get_clan_bans(self):

@@ -8,7 +8,7 @@ Google Sheets python API
 https://developers.google.com/sheets/api/quickstart/python
 """
 #   We will use requests since it has a Session handler automatically taking care
-#   Of any cookies
+#   Of any cookies/headers required
 import requests
 import json
 
@@ -37,7 +37,7 @@ class Avabur(object):
         self.market_url = self.base_url + "market.php"
         self.activity_url = self.base_url + "account_activity.php"
 
-        #   Create Session to magically handle our cookies and stuff
+        #   Create Session to magically handle our cookies and headers
         self.session = requests.Session()
 
         #   Authenticate!
